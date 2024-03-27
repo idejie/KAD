@@ -1,0 +1,102 @@
+[
+    {
+        "id": 0,
+        "name": "booklet",
+        "supercategory": "none"
+    },
+    {
+        "id": 1,
+        "name": "gray_angled_perforated_bar",
+        "supercategory": "none"
+    },
+    {
+        "id": 2,
+        "name": "partial_model",
+        "supercategory": "none"
+    },
+    {
+        "id": 3,
+        "name": "white_angled_perforated_bar",
+        "supercategory": "none"
+    },
+    {
+        "id": 4,
+        "name": "wrench",
+        "supercategory": "none"
+    },
+    {
+        "id": 5,
+        "name": "screwdriver",
+        "supercategory": "none"
+    },
+    {
+        "id": 6,
+        "name": "gray_perforated_bar",
+        "supercategory": "none"
+    },
+    {
+        "id": 7,
+        "name": "wheels_axle",
+        "supercategory": "none"
+    },
+    {
+        "id": 8,
+        "name": "red_angled_perforated_bar",
+        "supercategory": "none"
+    },
+    {
+        "id": 9,
+        "name": "red_perforated_bar",
+        "supercategory": "none"
+    },
+    {
+        "id": 10,
+        "name": "rod",
+        "supercategory": "none"
+    },
+    {
+        "id": 11,
+        "name": "handlebar",
+        "supercategory": "none"
+    },
+    {
+        "id": 12,
+        "name": "screw",
+        "supercategory": "none"
+    },
+    {
+        "id": 13,
+        "name": "tire",
+        "supercategory": "none"
+    },
+    {
+        "id": 14,
+        "name": "rim",
+        "supercategory": "none"
+    },
+    {
+        "id": 15,
+        "name": "washer",
+        "supercategory": "none"
+    },
+    {
+        "id": 16,
+        "name": "red_perforated_junction_bar",
+        "supercategory": "none"
+    },
+    {
+        "id": 17,
+        "name": "red_4_perforated_junction_bar",
+        "supercategory": "none"
+    },
+    {
+        "id": 18,
+        "name": "bolt",
+        "supercategory": "none"
+    },
+    {
+        "id": 19,
+        "name": "roller",
+        "supercategory": "none"
+    }
+]
