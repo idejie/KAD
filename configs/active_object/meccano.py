@@ -147,6 +147,17 @@ optim_wrapper = dict(
     paramwise_cfg=dict(custom_keys={'backbone': dict(lr_mult=0.1)})
 )  # custom_keys contains sampling_offsets and reference_points in DeformDETR  # noqa
 
+
+# optim_wrapper = dict(
+#     type='AmpOptimWrapper',
+#     optimizer=dict(
+#         type='AdamW',
+#         lr=0.0001,  # 0.0002 for DeformDETR
+#         weight_decay=0.0001),
+#     clip_grad=dict(max_norm=0.1, norm_type=2),
+#     paramwise_cfg=dict(custom_keys={'backbone': dict(lr_mult=0.1)})
+# )  # custom_keys contains sampling_offsets and reference_points in DeformDETR  # noqa
+
 # learning policy
 max_epochs = 50
 train_cfg = dict(

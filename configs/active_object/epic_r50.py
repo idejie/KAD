@@ -133,7 +133,7 @@ train_pipeline = [
     dict(type='PackActiveDetInputs')
 ]
 train_dataloader = dict(
-    batch_size=1,
+    batch_size=8,
     dataset=dict(
         filter_cfg=dict(filter_empty_gt=True), pipeline=train_pipeline))
 
