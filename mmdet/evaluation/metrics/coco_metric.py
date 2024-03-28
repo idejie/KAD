@@ -104,6 +104,8 @@ class CocoMetric(BaseMetric):
         if iou_thrs is None:
             iou_thrs = np.linspace(
                 .5, 0.95, int(np.round((0.95 - .5) / .05)) + 1, endpoint=True)
+        else:
+            iou_thrs = np.array(iou_thrs)
         self.iou_thrs = iou_thrs
         self.metric_items = metric_items
         self.format_only = format_only
@@ -490,6 +492,22 @@ class CocoMetric(BaseMetric):
                 'AR_s@1000': 9,
                 'AR_m@1000': 10,
                 'AR_l@1000': 11
+            }
+            if self.iou_thrs[0]==0.25:
+                coco_metric_names = {
+                'mAP': 0,
+                'mAP_25': 1,
+                'mAP_50': 2,
+                'mAP_75': 3,
+                'mAP_s': 4,
+                'mAP_m': 5,
+                'mAP_l': 6,
+                'AR@100': 7,
+                'AR@300': 8,
+                'AR@1000': 9,
+                'AR_s@1000': 10,
+                'AR_m@1000': 11,
+                'AR_l@1000': 12
             }
             metric_items = self.metric_items
             if metric_items is not None:

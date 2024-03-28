@@ -257,6 +257,9 @@ class COCOevalMP(COCOeval):
         def _summarizeDets():
             stats = []
             stats.append(_summarize(1, maxDets=self.params.maxDets[-1]))
+            if self.params.iouThrs[0]==0.25: # add for AP25
+                stats.append(
+                _summarize(1, iouThr=.25, maxDets=self.params.maxDets[-1]))
             stats.append(
                 _summarize(1, iouThr=.5, maxDets=self.params.maxDets[-1]))
             stats.append(

@@ -76,7 +76,7 @@ model = dict(
             alpha=0.25,
             loss_weight=1.0),
         loss_bbox=dict(type='L1Loss', loss_weight=5.0),
-        loss_iou=dict(type='GIoULoss', loss_weight=2.0)),
+        loss_iou=dict(type='GIoULoss', loss_weight=5.0)),
     dn_cfg=dict(  # TODO: Move to model.train_cfg ?
         label_noise_scale=0.5,
         box_noise_scale=1.0,  # 0.4 for DN-DETR
@@ -89,7 +89,7 @@ model = dict(
             match_costs=[
                 dict(type='FocalLossCost', weight=2.0),
                 dict(type='BBoxL1Cost', weight=5.0, box_format='xywh'),
-                dict(type='IoUCost', iou_mode='giou', weight=2.0)
+                dict(type='IoUCost', iou_mode='giou', weight=5.0)
             ])),
     test_cfg=dict(max_per_img=300))  # 100 for DeformDETR
 
