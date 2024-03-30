@@ -35,7 +35,17 @@ bash tools/dist_test.sh configs/active_object/meccano.py [path_to_checkpoint] [n
 ```
 
 ## Checkpoints
-Checkpoints for  models are provided in the `Release`  of the repo.
+|            | AP75 | AP50 | AP25 | Models |
+| ---------- | ---- | ---- | ---- | ------ |
+| Meccano    | 14.4 | 28.8 | 36.2 |    [meccano](https://pan.baidu.com/s/1jNLnWiYZqqeYvJk3H7GnPw?pwd=KAD0)    |
+| 100DOH     | 31.2 | 53.9 | 58.9 |    [100DOH](https://pan.baidu.com/s/1jNLnWiYZqqeYvJk3H7GnPw?pwd=KAD0)     |
+|            | AP   | AP50 | AP75 | Models |
+| ego4d-swin | 40.5 | 60.6 | 41.9 |    [ego4d-swin](https://pan.baidu.com/s/1jNLnWiYZqqeYvJk3H7GnPw?pwd=KAD0)     |
+| ego4d-r50  | 31.4 | 34.6 | 28.9 |     [ego4d-r50](https://pan.baidu.com/s/1jNLnWiYZqqeYvJk3H7GnPw?pwd=KAD0)      |
+| epic-swin  | 35.2 | 44.1 | 32.5 |  [epic-swin](https://pan.baidu.com/s/1jNLnWiYZqqeYvJk3H7GnPw?pwd=KAD0)         |
+| epic-r50   | 30.2 | 30.1 | 22.5 |     [epic-r50](https://pan.baidu.com/s/1jNLnWiYZqqeYvJk3H7GnPw?pwd=KAD0)   |
+
+
 
 ## Reference
 If you find our work useful in your research, please consider citing our paper:
