@@ -20,6 +20,8 @@ We evaluate our method on the following datasets:
 - EPIC
 - Ego4D
 
+Split: [fuqichen1998/SequentialVotingDet](https://github.com/fuqichen1998/SequentialVotingDet.git)
+
 ## Training
 To train the teacher model, run the following command:
 ```bash
