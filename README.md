@@ -1,63 +1,48 @@
-# Active Object Detection with Knowledge Aggregation and Distillation
-> This repository contains the code for the paper "Active Object Detection with Knowledge Aggregation and Distillation" accepted at CVPR 2024.
+# Academic Project Page Template
+This is an academic paper project page template.
 
 
-## Requirements
-- Python>=3.10.9
-- torch>=1.13.1
-- torchvision>=0.14.1
-- mmcv>= 2.1.0
-- mmdet>=3.3.0
-- mmengine >=0.10.3
-- timm>=0.6.13
-- loguru
-- `requirements.txt` file is provided for easy installation of the required packages.
-
-## Datasets
-We evaluate our method on the following datasets:
-- MECCANO
-- 100DOH
-- EPIC
-- Ego4D
-
-Split: [fuqichen1998/SequentialVotingDet](https://github.com/fuqichen1998/SequentialVotingDet.git)
-
-## Training
-To train the teacher model, run the following command:
-```bash
-# for example [meccano]:
-bash tools/dist_train.sh configs/active_object/meccano.py [num_gpus]
-```
-
-## Evaluation
-To evaluate the student model, run the following command:
-```bash
-# for example [meccano]:
-bash tools/dist_test.sh configs/active_object/meccano.py [path_to_checkpoint] [num_gpus]
-```
-
-## Checkpoints
-|            | AP75 | AP50 | AP25 | Models |
-| ---------- | ---- | ---- | ---- | ------ |
-| Meccano    | 14.4 | 28.8 | 36.2 |    [meccano](https://pan.baidu.com/s/1jNLnWiYZqqeYvJk3H7GnPw?pwd=KAD0)    |
-| 100DOH     | 31.2 | 53.9 | 58.9 |    [100DOH](https://pan.baidu.com/s/1jNLnWiYZqqeYvJk3H7GnPw?pwd=KAD0)     |
-|            | AP   | AP50 | AP75 | Models |
-| ego4d-swin | 40.5 | 60.6 | 41.9 |    [ego4d-swin](https://pan.baidu.com/s/1jNLnWiYZqqeYvJk3H7GnPw?pwd=KAD0)     |
-| ego4d-r50  | 31.4 | 34.6 | 28.9 |     [ego4d-r50](https://pan.baidu.com/s/1jNLnWiYZqqeYvJk3H7GnPw?pwd=KAD0)      |
-| epic-swin  | 35.2 | 44.1 | 32.5 |  [epic-swin](https://pan.baidu.com/s/1jNLnWiYZqqeYvJk3H7GnPw?pwd=KAD0)         |
-| epic-r50   | 30.2 | 30.1 | 22.5 |     [epic-r50](https://pan.baidu.com/s/1jNLnWiYZqqeYvJk3H7GnPw?pwd=KAD0)   |
+Example project pages built using this template are:
+- https://vision.huji.ac.il/spectral_detuning/
+- https://vision.huji.ac.il/podd/
+- https://dreamix-video-editing.github.io
+- https://vision.huji.ac.il/conffusion/
+- https://vision.huji.ac.il/3d_ads/
+- https://vision.huji.ac.il/ssrl_ad/
+- https://vision.huji.ac.il/deepsim/
 
 
 
-## Reference
-If you find our work useful in your research, please consider citing our paper:
-```
-# TODO
-```
+## Start using the template
+To start using the template click on `Use this Template`.
 
-## Acknowledgements
-We would like to thank the authors of [mmdetection](github.com/open-mmlab/mmdetection) for providing the codebase for object detection.
+The template uses html for controlling the content and css for controlling the style. 
+To edit the websites contents edit the `index.html` file. It contains different HTML "building blocks", use whichever ones you need and comment out the rest.  
 
+**IMPORTANT!** Make sure to replace the `favicon.ico` under `static/images/` with one of your own, otherwise your favicon is going to be a dreambooth image of me.
 
+## Components
+- Teaser video
+- Images Carousel
+- Youtube embedding
+- Video Carousel
+- PDF Poster
+- Bibtex citation
 
+## Tips:
+- The `index.html` file contains comments instructing you what to replace, you should follow these comments.
+- The `meta` tags in the `index.html` file are used to provide metadata about your paper 
+(e.g. helping search engine index the website, showing a preview image when sharing the website, etc.)
+- The resolution of images and videos can usually be around 1920-2048, there rarely a need for better resolution that take longer to load. 
+- All the images and videos you use should be compressed to allow for fast loading of the website (and thus better indexing by search engines). For images, you can use [TinyPNG](https://tinypng.com), for videos you can need to find the tradeoff between size and quality.
+- When using large video files (larger than 10MB), it's better to use youtube for hosting the video as serving the video from the website can take time.
+- Using a tracker can help you analyze the traffic and see where users came from. [statcounter](https://statcounter.com) is a free, easy to use tracker that takes under 5 minutes to set up. 
+- This project page can also be made into a github pages website.
+- Replace the favicon to one of your choosing (the default one is of the Hebrew University). 
+- Suggestions, improvements and comments are welcome, simply open an issue or contact me. You can find my contact information at [https://pages.cs.huji.ac.il/eliahu-horwitz/](https://pages.cs.huji.ac.il/eliahu-horwitz/)
 
+## Acknowledgments
+Parts of this project page were adopted from the [Nerfies](https://nerfies.github.io/) page.
+
+## Website License
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
